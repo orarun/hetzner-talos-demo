@@ -1,0 +1,8 @@
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+.terraform.lock.hcl
+*.tfvars
+kubeconfig
+talosconfig
+talos-demo-tfstate-s3.txt
