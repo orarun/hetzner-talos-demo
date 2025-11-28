@@ -9,7 +9,7 @@ resource "kubernetes_manifest" "patroni_postgres_cluster" {
     }
     "spec" = {
       "teamId"           = "app"
-      "numberOfInstances" = 3
+      "numberOfInstances" = 2
 
       "volume" = {
         "size" = "10Gi"
