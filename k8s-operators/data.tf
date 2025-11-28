@@ -1,8 +1,9 @@
-// k8s-apps/backend.tf
-# terraform {
-#   backend "s3" {
-#     bucket = "talos-demo-tfstate-bucket"
-#     key    = "k8s-apps/terraform.tfstate"
+// k8s-operators/data.tf
+# data "terraform_remote_state" "infra" {
+#   backend = "s3"
+#   config = {
+#     bucket = "zalando-tfstate-bucket"
+#     key    = "infra/terraform.tfstate"
 #     region = "main"
 
 #     endpoints = {
@@ -18,3 +19,10 @@
 #   }
 # }
 
+data "terraform_remote_state" "infra" {
+  backend = "local"
+
+  config = {
+    path = "../infra/terraform.tfstate"
+  }
+}
