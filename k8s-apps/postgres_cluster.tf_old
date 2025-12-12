@@ -1,4 +1,4 @@
-// postgres_cluster.tf
+// k8s-apps/postgres_cluster.tf
 resource "kubernetes_manifest" "patroni_postgres_cluster" {
   manifest = {
     "apiVersion" = "acid.zalan.do/v1"

@@ -28,18 +28,18 @@ module "talos_cluster" {
         "node.kubernetes.io/instance-type" = "cx23"
       }
     },
-    # {
-    #   type = "cx23"
-    #   labels = {
-    #     "node.kubernetes.io/instance-type" = "cx23"
-    #   }
-    # },
-    # {
-    #   type = "cx23"
-    #   labels = {
-    #     "node.kubernetes.io/instance-type" = "cx23"
-    #   }
-    # }
+    {
+      type = "cx23"
+      labels = {
+        "node.kubernetes.io/instance-type" = "cx23"
+      }
+    },
+    {
+      type = "cx23"
+      labels = {
+        "node.kubernetes.io/instance-type" = "cx23"
+      }
+    }
   ]
 }
 

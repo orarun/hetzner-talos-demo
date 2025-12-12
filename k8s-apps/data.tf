@@ -1,12 +1,13 @@
 // k8s-apps/data.tf
-data "kubernetes_secret" "postgres_app_user" {
-  metadata {
-    name      = "app-postgres-cluster.app-user.credentials.postgresql.acid.zalan.do"
-    namespace = "postgres-ha"
-  }
 
-  depends_on = [kubernetes_manifest.patroni_postgres_cluster]
-}
+# data "kubernetes_secret" "postgres_app_user" {
+#   metadata {
+#     name      = "app-postgres-cluster.app-user.credentials.postgresql.acid.zalan.do"
+#     namespace = "postgres-ha"
+#   }
+
+#   depends_on = [kubernetes_manifest.patroni_postgres_cluster]
+# }
 
 # data "terraform_remote_state" "infra" {
 #   backend = "s3"
